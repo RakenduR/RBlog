@@ -1,26 +1,33 @@
 ---
-title: "Welcome to My Blog"
+title: "Lifecycle Series 001 : Kickstart"
 description: |
-  Welcome to our new blog, My Blog. We hope you enjoy 
-  reading what we have to say!
-author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: 07-20-2022
+  Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle
+
+date: "`r Sys.Date()`"
+theme: theme.css
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+Analytics has become a crucial part of businesses. It plays a vital role in helping stakeholders make objective, accurate and confident decisions. Analytics can be of the following types, looking from the past to the future
 
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
+* Descriptive analysis - <i> What happened </i>
 
-```
+* Diagnostic analysis - <i> Why did it happen </i>
+
+* Predictive analysis - <i> What will happen </i>
+
+* Prescriptive analysis - <i> How can we make it happen </i>
+
+In this Lifecycle series, we will be following a particular use case related to healthcare. Now, more than ever before, healthcare domain is in the limelight. In the past few years, healthcare related decisions have been the make or break factor for economies and countries around the world.  We have seen how different countries took different approaches and we also saw how there is no one size fits all. These are valuable lessons that can be applied to all fields. The major lessons to be learnt are:
+
+ - For a decision for a seemingly isolated problem, you will soon realize that there are multiple governing factors and there will be multiple factors that are directly and indirectly impacted by this decision.
+
+ - It is important to understand not just the problem statement but the entire neighborhood of it. It is important to zoom out and ask questions.For a Data Scientist, it is important to look beyond the data and understand the nook and corner of the related business.
+ 
+### Problem Statement
+
 
 
 

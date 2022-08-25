@@ -1,13 +1,22 @@
-name: "RBlog"
-title: "My P Blog"
+name: "Crumbs along the Way"
+title: ""
 theme: theme.css
 description: |
-  My Blog
+  A place where I jot down my learnings and experiences from my data science journey.
 output_dir: "_site"
 navbar:
-  right:
+  left:
     - text: "Home"
       href: https://rakendu-ramesh.netlify.app/
+  right:
+    - text: "Experience"
+      href: https://rakendu-ramesh.netlify.app/experience.html
+    - text: "Education"
+      href: https://rakendu-ramesh.netlify.app/education.html
+    - text: "Skills"
+      href: https://rakendu-ramesh.netlify.app/skills.html
+    - text: "Blog"
+      href: https://rakendu-blog.netlify.app/
     - text: "About"
-      href: about.html
+      href: https://rakendu-ramesh.netlify.app/about.html
 output: distill::distill_article

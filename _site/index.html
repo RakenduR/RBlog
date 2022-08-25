@@ -88,26 +88,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>My P Blog: My Personal Blog</title>
+  <title>: Crumbs along the Way</title>
 
+  <meta property="description" itemprop="description" content="A place where I jot down my learnings and experiences from my data science journey."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="My P Blog: My Personal Blog"/>
+  <meta property="og:title" content=": Crumbs along the Way"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A place where I jot down my learnings and experiences from my data science journey."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="My P Blog"/>
+  <meta property="og:site_name" content=""/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="My P Blog: My Personal Blog"/>
+  <meta property="twitter:title" content=": Crumbs along the Way"/>
+  <meta property="twitter:description" content="A place where I jot down my learnings and experiences from my data science journey."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["My Personal Blog"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Crumbs along the Way"]},{"type":"character","attributes":{},"value":["A place where I jot down my learnings and experiences from my data science journey.\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2198,6 +2201,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:      rgba(0, 0, 0, 0.5);
   }
 
+
   /*-- WEBSITE HEADER + FOOTER --*/
   /* These properties only apply to Distill sites and blogs  */
 
@@ -2394,7 +2398,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"My Personal Blog","authors":[]}
+{"title":"Crumbs along the Way","description":"A place where I jot down my learnings and experiences from my data science journey.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2402,12 +2406,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">My P Blog</a>
+<a href="index.html" class="title"></a>
+<a href="https://rakendu-ramesh.netlify.app/">Home</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
-<a href="https://rakendu-ramesh.netlify.app/">Home</a>
-<a href="about.html">About</a>
+<a href="https://rakendu-ramesh.netlify.app/experience.html">Experience</a>
+<a href="https://rakendu-ramesh.netlify.app/education.html">Education</a>
+<a href="https://rakendu-ramesh.netlify.app/skills.html">Skills</a>
+<a href="https://rakendu-blog.netlify.app/">Blog</a>
+<a href="https://rakendu-ramesh.netlify.app/about.html">About</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2550,23 +2558,20 @@ function init_posts_list() {
 
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
-<h1 class="posts-list-caption" data-caption="My Personal Blog">My Personal Blog</h1>
+<h1 class="posts-list-caption" data-caption="Crumbs along the Way">Crumbs along the Way</h1>
 <a href="posts/welcome/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
-<div class="publishedDate">July 20, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
+<div class="publishedDate">Aug. 25, 2022</div>
+<div class="dt-authors"></div>
 </div>
 <div class="thumbnail">
 <img/>
 </div>
 <div class="description">
-<h2>Welcome to My Blog</h2>
+<h2>Lifecycle Series 001 : Kickstart</h2>
 <div class="dt-tags"></div>
-<p>Welcome to our new blog, My Blog. We hope you enjoy 
-reading what we have to say!</p>
+<p>Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle</p>
 </div>
 </a>
 </div>
@@ -2577,10 +2582,11 @@ reading what we have to say!</p>
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>My Personal Blog</h1>
+<h1>Crumbs along the Way</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>A place where I jot down my learnings and experiences from my data
+science journey.</p></p>
 </div>
 
 

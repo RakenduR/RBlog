@@ -10,10 +10,11 @@
     },
     {
       "path": "index.html",
-      "title": "My Personal Blog",
+      "title": "Crumbs along the Way",
+      "description": "A place where I jot down my learnings and experiences from my data science journey.\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-07-21T10:44:18+08:00"
+      "last_modified": "2022-08-25T11:40:48+08:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -1,5 +1,7 @@
 ---
-title: "My Personal Blog"
+title: "Crumbs along the Way"
+description: |
+  A place where I jot down my learnings and experiences from my data science journey.
 site: distill::distill_website
 listing: posts
 ---

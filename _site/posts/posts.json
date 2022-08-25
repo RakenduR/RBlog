@@ -1,19 +1,14 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to My Blog",
-    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2022-07-20",
+    "title": "Lifecycle Series 001 : Kickstart",
+    "description": "Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle",
+    "author": [],
+    "date": "2022-08-25",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\nAnalytics has become a crucial part of businesses. It plays a vital\r\nrole in helping stakeholders make objective, accurate and confident\r\ndecisions. Analytics can be of the following types, looking from the\r\npast to the future\r\nDescriptive analysis -  What happened \r\nDiagnostic analysis -  Why did it happen \r\nPredictive analysis -  What will happen \r\nPrescriptive analysis -  How can we make it happen\r\n\r\nIn this Lifecycle series, we will be following a particular use case\r\nrelated to healthcare. Now, more than ever before, healthcare domain is\r\nin the limelight. In the past few years, healthcare related decisions\r\nhave been the make or break factor for economies and countries around\r\nthe world. We have seen how different countries took different\r\napproaches and we also saw how there is no one size fits all. These are\r\nvaluable lessons that can be applied to all fields. The major lessons to\r\nbe learnt are:\r\nFor a decision for a seemingly isolated problem, you will soon\r\nrealize that there are multiple governing factors and there will be\r\nmultiple factors that are directly and indirectly impacted by this\r\ndecision.\r\nIt is important to understand not just the problem statement but\r\nthe entire neighborhood of it. It is important to zoom out and ask\r\nquestions.For a Data Scientist, it is important to look beyond the data\r\nand understand the nook and corner of the related business.\r\nProblem Statement\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-07-20T12:59:03+08:00",
+    "last_modified": "2022-08-25T11:10:12+08:00",
     "input_file": {}
   }
 ]
