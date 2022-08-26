@@ -94,8 +94,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2022-08-25"/>
-<meta property="article:created" itemprop="dateCreated" content="2022-08-25"/>
+<meta property="article:published" itemprop="datePublished" content="2022-08-26"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-08-26"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content=": Lifecycle Series 001 : Kickstart"/>
@@ -113,12 +113,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","theme","output"]}},"value":[{"type":"character","attributes":{},"value":["Lifecycle Series 001 : Kickstart"]},{"type":"character","attributes":{},"value":["Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle"]},{"type":"character","attributes":{},"value":["2022-08-25"]},{"type":"character","attributes":{},"value":["theme.css"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","theme","output"]}},"value":[{"type":"character","attributes":{},"value":["Lifecycle Series 001 : Kickstart"]},{"type":"character","attributes":{},"value":["Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle"]},{"type":"character","attributes":{},"value":["2022-08-26"]},{"type":"character","attributes":{},"value":["theme.css"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/header-attrs-2.14/header-attrs.js","welcome_files/jquery-3.6.0/jquery-3.6.0.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.map","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["image/code_1.png","image/code_2.png","welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/header-attrs-2.14/header-attrs.js","welcome_files/jquery-3.6.0/jquery-3.6.0.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.js","welcome_files/jquery-3.6.0/jquery-3.6.0.min.map","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2406,7 +2406,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Lifecycle Series 001 : Kickstart","description":"Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle","authors":[],"publishedDate":"2022-08-25T00:00:00.000+08:00"}
+{"title":"Lifecycle Series 001 : Kickstart","description":"Welcome to the first of a 6 part series covering  various steps in a Machine Learning Project Lifecycle","authors":[],"publishedDate":"2022-08-26T00:00:00.000+08:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2466,12 +2466,124 @@ be learnt are:</p>
 realize that there are multiple governing factors and there will be
 multiple factors that are directly and indirectly impacted by this
 decision.</p></li>
-<li><p>It is important to understand not just the problem statement but
+<li><p>It is important to understand not just the business problem but
 the entire neighborhood of it. It is important to zoom out and ask
 questions.For a Data Scientist, it is important to look beyond the data
 and understand the nook and corner of the related business.</p></li>
 </ul>
 <h3 id="problem-statement">Problem Statement</h3>
+<p>The objective of a problem statement is to explain the current state,
+explain the desired state and identify what is required to change the
+current state to the desired state. Notice that the Problem Statement is
+purely, well, a problem statement and it does not include the solution
+or how we plan to achieve the desired from the current. The ‘how’ of it
+is still up for debate. It does however specify how we can measure the
+benefit of the solution and at what stage we can say that we have
+achieved our objective.</p>
+<p>Let us formulate the problem statement for our healthcare
+scenario.</p>
+<p>The Emergency Room (ER) of Hospital ABC sees hundreds of patients
+everyday. The ER has a process in place to triage every incoming
+patient. The ER Nurse will carry out some basic checks which includes
+measuring the blood pressure, temperature, oxygen level etc of the
+patient as well as ask a few questions about the age, pain level,
+existing conditions,etc. All these are recorded and the Nurse will
+assign a Triage Acuity value ranging from 1-5, 1 being the highest.</p>
+<p>The objective of this triage process is to enable the hospital system
+to priorities the patients so that those in need of immediate care are
+not kept waiting. The patient then sees the doctor after which he may or
+may not get hospitalized. Now, the hospital resources are limited -
+limited number of beds, limited number of equipments, limited number of
+nurses. So we want to make sure that only those patients who are
+definitely in need of hospitalization are admitted. This is currently
+done based on the experience of the doctor. Ah, there it is, a decision
+based on gut feeling. While we have absolutely no doubt in the
+capability of our doctors, we are looking at ways to improve patient
+care while optimizing the utilization of hospital resources.</p>
+<p>What are our guiding factors at this point :</p>
+<ol type="1">
+<li><p>Provide the best possible care to the patient</p></li>
+<li><p>As fast as possible</p></li>
+<li><p>Without inconveniencing the patient with unnecessary
+tests</p></li>
+<li><p>Avoid hospitalization if possible, this serves 2 purposes</p>
+<ul>
+<li><p>not inconvenience the patient and reduce the cost to the
+patient</p></li>
+<li><p>save the hospital resources for critical patients</p></li>
+</ul></li>
+<li><p>Avoid the patient from coming back to the ER immediately (time
+limit to be defined)</p></li>
+<li><p>Avoid mortality</p></li>
+</ol>
+<p>The dataset we are going to use for this case study has all details
+of patient visits to the ER, hospitalization details, discharge details.
+Let us focus on hospitalization for the purpose of this study.</p>
+<p><b>For Machine Learning project, it is very critical to identify the
+data that is available at the point of time when our model is going to
+be utilized. </b></p>
+<p>For example, our model is to predict if a patient who has come into
+the ER will get hospitalized or not, what is the data that is
+available?</p>
+<ul>
+<li><p>We have the details recorded by the Triage nurse</p></li>
+<li><p>We have the details of the patients previous visits</p></li>
+</ul>
+<p>What we do not have are the following:</p>
+<ul>
+<li>any details of what happens after the triage nurse has collected the
+data</li>
+</ul>
+<p>Let us now define our Outcome column. For our case study we want to
+identify the records in the data set where the patient who came to the
+ER has been hospitalized. From the data dictionary, we know that the
+patients who are hospitalized are assigned a hospital admission id
+(hdm_id) for that particular stay. We will use this column to derive our
+Outcome_Hospitalization column with the following code</p>
+<p><img src="image/code_1.png" /></p>
+<p>Let us now analyse what percentage of ER patients get hospitalized
+using the below code.</p>
+<p><img src="image/code_2.png" /></p>
+<p>The hospitalization rate is 46% approx. When a patient comes to ER,
+by assessing the chances of the patient getting hospitalized, the
+medical team can further optimize the treatment plan with the objective
+of avoiding hospitalization. We do understand that hospitalization
+cannot be always avoided even with optimized treatment. Hence, we can
+decide on reducing the hospitalization rate to a 35% over a period of
+next 3 months as our objective. In real life scenario, this decision
+will be taken based on discussions with the stakeholders.</p>
+<p>It is also important to define a control. In this case, in our effort
+to reduce hospitalization rate, we should not end up compromising on the
+care. So mortality and ER Readmission will be our control.</p>
+<p>Let us now frame our <b>Problem Statement</b>:</p>
+<p><span style="color:blue"> The current rate of Hospitalization from
+the ER is 46%. This results in a large proportion of the hospital
+facility being occupied, sometimes resulting in unavailability. The
+business objective is to reduce hospitalization by providing optimum
+care in the ER. The success criteria to judge whether the problem has
+been solved is, in the next 3 months, the hospitalization rate should
+come down to 35% without increase in mortality rate and ER Readmission
+rate. </span></p>
+<p>We now have the business problem, which needs to be mapped to a
+<b>data science problem</b>.</p>
+<p><span style="color:green"> The hospital has records of
+hospitalizations over a period of time. Using this data, we can train a
+classification model which can predict the chances that a new patient
+who has come to the ER will get hospitalized. This can give insight to
+the medical team regarding the hospitalization chances if the existing
+treatment protocol is followed. Based on this, the team can optimize the
+treatment protocol for the patient in the ER resulting in reduced
+hospitalization. </span></p>
+<p>Now we have established a direction for our data science project. We
+will traverse through the rest of the project lifecycle in parts</p>
+<ul>
+<li><p>Exploratory Data Analysis</p></li>
+<li><p>Data Wrangling</p></li>
+<li><p>Model Training and Evaluation</p></li>
+<li><p>Hyperparameter Tuning</p></li>
+<li><p>Dashboard Development</p></li>
+</ul>
+<p>Stay tuned for Exploratory Data Analysis</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
