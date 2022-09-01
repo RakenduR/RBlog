@@ -73,7 +73,7 @@ Once done with the configuration, launch the instance and wait for the status to
 
 ![](image/instance.png)
 
-
+### Setting up the server
 
 Great! Now let us SSH into the vm from windows command prompt and do the necessary installations. Below is the command for ssh, using the key name as well as the dns.
 
