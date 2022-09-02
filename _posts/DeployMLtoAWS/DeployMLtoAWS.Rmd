@@ -59,15 +59,25 @@ Let us start off by launching an AWS EC2 instance using the following configurat
 
 We will use ubuntu as the OS for our VM because it is considered light weight.
 
-![](image/ubuntu.png){width=50%}
+<center>
+
+![](image/ubuntu.png){width=70%}
+
+</center>
+
 
 We will create a key pair which allows us to SSH into our vm. Remember to use the ppk key if you are going to use putty. In this case, since I will only be deploying the model on the instance, i will just use the windows command prompt. Save the key for further use.
 
-![](image/key.png){width=50%}
+<center>
+
+![](image/key.png){width=70%}
+
+</center>
 
 For security, we will set up the default port 22 to ssh into the vm and then we will need to allow the port 9004 which is the default port used by tabpy server to listen for requests. Note that here we have set up to accept requests from any IP. We can also restrict to a particular IP especially for the SSH security.
 
 ![](image/security.png)
+
 Once done with the configuration, launch the instance and wait for the status to change to running.We will be using the public IP and DNS as well as the saved key pair in further steps.
 
 
@@ -80,7 +90,9 @@ Great! Now let us SSH into the vm from windows command prompt and do the necessa
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;"> ssh -i "tabpy_key.pem" ubuntu@ec2-54-151-241-225.ap-southeast-1.compute.amazonaws.com</span></div>
 
+
 Ubuntu comes with the latest version of Python.
+
 
 ![](image/setup.png)
 
@@ -88,33 +100,48 @@ We will install pip and tabpy.But first, it is good practice to update the envir
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">sudo apt-get update</span></div>
 
+
 Now let us install pip.
+
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">sudo apt-get -y install python3-pip</span></div>
 
+
 Now let us install tabpy.
+
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">pip3 install tabpy</span></div>
 
+
 After installing tabpy package, the ssh needs to be reinitiated to be able to run tabpy server.
+
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">tabpy</span></div>
 
+
 Now let us ssh into the vm from windows command prompt to transfer the files. Below is the command to transfer the files
+
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">scp -r -i "tabpy_001.pem" ./AWS_Files ubuntu@ec2-54-151-241-225.ap-southeast-1.compute.amazonaws.com:~/</span></div>
 
+
 We can see that the model pickle, pre_process pickle as well as the python script to deploy the machine learning model are moved to the vm.
+
 
 ![](image/transfer.png)
 We can confirm that the files are on vm.
 
-![](image/vm_files.png){width=50%}
+<center>
+
+![](image/vm_files.png){width=60%}
+
+</center>
 
 Let us now run the deploy_app.py using the below command
 
 
 <div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">python3 deploy_app.py</span></div>
+
 
 The python script in deploy_app.py (below) deploys the machine learning model on the tabpy server. Please feel free to download the script from [Github](https://github.com/RakenduR/Healthcare_Analytics/tree/main/AWS_Files)
 
@@ -123,16 +150,57 @@ The python script in deploy_app.py (below) deploys the machine learning model on
 
 After running the above python script, we can verify that our function <code>Hospitalization_Prediction</code> is available on tabpy server
 
-![](image/tab_server.png){width=50%}
+<center>
+
+![](image/tab_server.png){width=70%}
+
+</center>
 
 ### Settings on Tableau dashboard
 
-Let us now set up tableau to access the machine learning model from Tableau Desktop - Help - Settings and Performance - Manage Alaytics Extension Connection as below. The Test Connection shows a successful message. Yay!
+Let us now set up tableau to access the machine learning model from Tableau Desktop - Help - Settings and Performance - Manage Analytics Extension Connection as below. The Test Connection shows a successful message. Yay!
 
-![](image/tab_setting.png){width=40%}
+<center>
+
+![](image/tab_setting.png){width=60%}
+
+</center>
 
 Let us now try out our dashboard. Click on the image below to view the video
 
 [![Youtube](image/dashboard.png){width=70%}](https://youtu.be/b9KLPyCx-y0)
 
-Stay peeled for everything in between :)
+### Steps to keep Tabpy running on the server
+
+You have your dashboard up an running now, but if you close your terminal, the tabpy will get terminated. In order to keep it running when you are not connected to the server, we can install <b>tmux</b> which is a terminal multiplexer for unix like operating systems.
+
+1. Stop Tabpy using Cntrl X, Cntrl C
+
+2. Install tmux
+
+<div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">sudo apt install tmux</span></div>
+<br>
+3. Create new session called tabpy
+
+<div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">tmux new -s tabpy</span></div>
+<br>
+4. Start tabpy in the new session by entering 'tabpy'. So now the session is active and it can be detached by typing Cntrl B, D. Now the session is detached and the terminal can be closed, the tableau dashboard will still be able to access the ML model running on AWS EC2.
+
+5. To get a list of all active sessions, use the following command 
+
+<div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">tmux ls</span></div>
+<br>
+6. In order to attach to an active session, use the following command
+
+<div style="background-color: #1e1e1e;" cursor=none><span style="color: #d4d4d4;">tmux attach-session -t tabpy</span></div>
+<br>
+Screenshot of the terminal below for reference:
+
+
+![](image/tmux.png)
+
+
+
+There you go! The Machine Learning model is up and running and accessible to the Tableau Dashboard from anywhere.
+
+Stay peeled for other posts in the <b>Machine Learning Project Lifecycle</b> :)

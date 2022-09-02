@@ -94,8 +94,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2022-09-01"/>
-  <meta property="article:created" itemprop="dateCreated" content="2022-09-01"/>
+  <meta property="article:published" itemprop="datePublished" content="2022-09-02"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-09-02"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Deploy ML Model to AWS"/>
@@ -112,12 +112,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","theme","output"]}},"value":[{"type":"character","attributes":{},"value":["Deploy ML Model to AWS"]},{"type":"character","attributes":{},"value":["Lifecycle Series 006: Final part of the Lifecycle series\n"]},{"type":"character","attributes":{},"value":["2022-09-01"]},{"type":"character","attributes":{},"value":["theme.css"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","theme","output"]}},"value":[{"type":"character","attributes":{},"value":["Deploy ML Model to AWS"]},{"type":"character","attributes":{},"value":["Lifecycle Series 006: Final part of the Lifecycle series\n"]},{"type":"character","attributes":{},"value":["2022-09-02"]},{"type":"character","attributes":{},"value":["theme.css"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DeployMLtoAWS_files/anchor-4.2.2/anchor.min.js","DeployMLtoAWS_files/bowser-1.9.3/bowser.min.js","DeployMLtoAWS_files/distill-2.2.21/template.v2.js","DeployMLtoAWS_files/header-attrs-2.14/header-attrs.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.min.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.min.map","DeployMLtoAWS_files/popper-2.6.0/popper.min.js","DeployMLtoAWS_files/tippy-6.2.7/tippy-bundle.umd.min.js","DeployMLtoAWS_files/tippy-6.2.7/tippy-light-border.css","DeployMLtoAWS_files/tippy-6.2.7/tippy.css","DeployMLtoAWS_files/tippy-6.2.7/tippy.umd.min.js","DeployMLtoAWS_files/webcomponents-2.0.0/webcomponents.js","image/AWS_instance_type.png","image/AWS_Tabpy_Arch.png","image/dashboard.png","image/deploy_app.png","image/instance.png","image/key.png","image/movie.mp4","image/security.png","image/setup.png","image/tab_server.png","image/tab_setting.png","image/tabpy.png","image/transfer.png","image/ubuntu.png","image/vm_files.png"]}
+  {"type":"character","attributes":{},"value":["DeployMLtoAWS_files/anchor-4.2.2/anchor.min.js","DeployMLtoAWS_files/bowser-1.9.3/bowser.min.js","DeployMLtoAWS_files/distill-2.2.21/template.v2.js","DeployMLtoAWS_files/header-attrs-2.14/header-attrs.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.min.js","DeployMLtoAWS_files/jquery-3.6.0/jquery-3.6.0.min.map","DeployMLtoAWS_files/popper-2.6.0/popper.min.js","DeployMLtoAWS_files/tippy-6.2.7/tippy-bundle.umd.min.js","DeployMLtoAWS_files/tippy-6.2.7/tippy-light-border.css","DeployMLtoAWS_files/tippy-6.2.7/tippy.css","DeployMLtoAWS_files/tippy-6.2.7/tippy.umd.min.js","DeployMLtoAWS_files/webcomponents-2.0.0/webcomponents.js","image/AWS_instance_type.png","image/AWS_Tabpy_Arch.png","image/dashboard.png","image/deploy_app.png","image/instance.png","image/key.png","image/movie.mp4","image/security.png","image/setup.png","image/tab_server.png","image/tab_setting.png","image/tabpy.png","image/tmux.png","image/transfer.png","image/ubuntu.png","image/vm_files.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1488,7 +1488,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Deploy ML Model to AWS","description":"Lifecycle Series 006: Final part of the Lifecycle series","authors":[],"publishedDate":"2022-09-01T00:00:00.000+08:00"}
+{"title":"Deploy ML Model to AWS","description":"Lifecycle Series 006: Final part of the Lifecycle series","authors":[],"publishedDate":"2022-09-02T00:00:00.000+08:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1559,22 +1559,27 @@ configuration</p>
 <p><img src="image/AWS_instance_type.png" /></p>
 <p>We will use ubuntu as the OS for our VM because it is considered
 light weight.</p>
-<p><img src="image/ubuntu.png" style="width:50.0%" /></p>
+<center>
+<p><img src="image/ubuntu.png" style="width:70.0%" /></p>
+</center>
 <p>We will create a key pair which allows us to SSH into our vm.
 Remember to use the ppk key if you are going to use putty. In this case,
 since I will only be deploying the model on the instance, i will just
 use the windows command prompt. Save the key for further use.</p>
-<p><img src="image/key.png" style="width:50.0%" /></p>
+<center>
+<p><img src="image/key.png" style="width:70.0%" /></p>
+</center>
 <p>For security, we will set up the default port 22 to ssh into the vm
 and then we will need to allow the port 9004 which is the default port
 used by tabpy server to listen for requests. Note that here we have set
 up to accept requests from any IP. We can also restrict to a particular
 IP especially for the SSH security.</p>
-<p><img src="image/security.png" /> Once done with the configuration,
-launch the instance and wait for the status to change to running.We will
-be using the public IP and DNS as well as the saved key pair in further
-steps.</p>
+<p><img src="image/security.png" /></p>
+<p>Once done with the configuration, launch the instance and wait for
+the status to change to running.We will be using the public IP and DNS
+as well as the saved key pair in further steps.</p>
 <p><img src="image/instance.png" /></p>
+<h3 id="setting-up-the-server">Setting up the server</h3>
 <p>Great! Now let us SSH into the vm from windows command prompt and do
 the necessary installations. Below is the command for ssh, using the key
 name as well as the dns.</p>
@@ -1616,7 +1621,9 @@ python script to deploy the machine learning model are moved to the
 vm.</p>
 <p><img src="image/transfer.png" /> We can confirm that the files are on
 vm.</p>
-<p><img src="image/vm_files.png" style="width:50.0%" /></p>
+<center>
+<p><img src="image/vm_files.png" style="width:60.0%" /></p>
+</center>
 <p>Let us now run the deploy_app.py using the below command</p>
 <div style="background-color: #1e1e1e;" data-cursor="none">
 <span style="color: #d4d4d4;">python3 deploy_app.py</span>
@@ -1629,19 +1636,61 @@ href="https://github.com/RakenduR/Healthcare_Analytics/tree/main/AWS_Files">Gith
 <p>After running the above python script, we can verify that our
 function <code>Hospitalization_Prediction</code> is available on tabpy
 server</p>
-<p><img src="image/tab_server.png" style="width:50.0%" /></p>
+<center>
+<p><img src="image/tab_server.png" style="width:70.0%" /></p>
+</center>
 <h3 id="settings-on-tableau-dashboard">Settings on Tableau
 dashboard</h3>
 <p>Let us now set up tableau to access the machine learning model from
-Tableau Desktop - Help - Settings and Performance - Manage Alaytics
+Tableau Desktop - Help - Settings and Performance - Manage Analytics
 Extension Connection as below. The Test Connection shows a successful
 message. Yay!</p>
-<p><img src="image/tab_setting.png" style="width:40.0%" /></p>
+<center>
+<p><img src="image/tab_setting.png" style="width:60.0%" /></p>
+</center>
 <p>Let us now try out our dashboard. Click on the image below to view
 the video</p>
 <p><a href="https://youtu.be/b9KLPyCx-y0"><img src="image/dashboard.png"
 style="width:70.0%" alt="Youtube" /></a></p>
-<p>Stay peeled for everything in between :)</p>
+<h3 id="steps-to-keep-tabpy-running-on-the-server">Steps to keep Tabpy
+running on the server</h3>
+<p>You have your dashboard up an running now, but if you close your
+terminal, the tabpy will get terminated. In order to keep it running
+when you are not connected to the server, we can install <b>tmux</b>
+which is a terminal multiplexer for unix like operating systems.</p>
+<ol type="1">
+<li><p>Stop Tabpy using Cntrl X, Cntrl C</p></li>
+<li><p>Install tmux</p></li>
+</ol>
+<div style="background-color: #1e1e1e;" data-cursor="none">
+<span style="color: #d4d4d4;">sudo apt install tmux</span>
+</div>
+<p><br> 3. Create new session called tabpy</p>
+<div style="background-color: #1e1e1e;" data-cursor="none">
+<span style="color: #d4d4d4;">tmux new -s tabpy</span>
+</div>
+<p><br> 4. Start tabpy in the new session by entering ‘tabpy’. So now
+the session is active and it can be detached by typing Cntrl B, D. Now
+the session is detached and the terminal can be closed, the tableau
+dashboard will still be able to access the ML model running on AWS
+EC2.</p>
+<ol start="5" type="1">
+<li>To get a list of all active sessions, use the following command</li>
+</ol>
+<div style="background-color: #1e1e1e;" data-cursor="none">
+<span style="color: #d4d4d4;">tmux ls</span>
+</div>
+<p><br> 6. In order to attach to an active session, use the following
+command</p>
+<div style="background-color: #1e1e1e;" data-cursor="none">
+<span style="color: #d4d4d4;">tmux attach-session -t tabpy</span>
+</div>
+<p><br> Screenshot of the terminal below for reference:</p>
+<p><img src="image/tmux.png" /></p>
+<p>There you go! The Machine Learning model is up and running and
+accessible to the Tableau Dashboard from anywhere.</p>
+<p>Stay peeled for other posts in the <b>Machine Learning Project
+Lifecycle</b> :)</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
