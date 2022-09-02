@@ -204,3 +204,12 @@ Screenshot of the terminal below for reference:
 There you go! The Machine Learning model is up and running and accessible to the Tableau Dashboard from anywhere.
 
 Stay peeled for other posts in the <b>Machine Learning Project Lifecycle</b> :)
+
+
+### References
+
+[https://www.machinelearningplus.com/deployment/deploy-ml-model-aws-ec2-instance/](https://www.machinelearningplus.com/deployment/deploy-ml-model-aws-ec2-instance/)
+
+[https://www.youtube.com/watch?v=Xk67f45BuoA](https://www.youtube.com/watch?v=Xk67f45BuoA)
+
+[https://www.educative.io/answers/installing-pip3-in-ubuntu](https://www.educative.io/answers/installing-pip3-in-ubuntu)
