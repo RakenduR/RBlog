@@ -8,6 +8,7 @@ theme: theme.css
 output:
   distill::distill_article:
     self_contained: false
+google_analytics: "UA-239968421-1"
 ---
 
 Analytics has become a crucial part of businesses. It plays a vital role in helping stakeholders make objective, accurate and confident decisions. Analytics can be of the following types, looking from the past to the future

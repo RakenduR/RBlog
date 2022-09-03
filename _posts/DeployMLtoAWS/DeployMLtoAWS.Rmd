@@ -8,6 +8,7 @@ theme: theme.css
 output:
   distill::distill_article:
     self_contained: false
+google_analytics: "UA-239968421-1"
 ---
 
 <style>
