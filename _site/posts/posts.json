@@ -8,7 +8,7 @@
     "categories": [],
     "contents": "\r\nObviously, when I started floating my Portfolio as part of my job\r\nhunt, I was curious about the footfall and that is when I came across this\r\nblog on implementing Google Analytics for distill articles. And here we\r\ngo!\r\n1. Set up Google Analytics\r\naccount\r\nUse your gmail account to login to Google Analytics.\r\nCreate an account and a property. The property is the url of your\r\nwebsite you want to analyse the traffic for. Create View.\r\nNote that you can use a combination of Universal Analytics as well as\r\nGA4 as of today (3rd Sept, 2022). Universal Analytics will be phased out\r\nby mid of next year. Hence, it is better to create a combination so that\r\nyou can smoothly move to GA4.\r\nOnce the property is created, copy the Tracking Id from Admin ->\r\nAccount -> Property -> Property Settings. Include this Tracking Id\r\nin your _site.yml header as\r\ngoogle_analytics: “UA-999999999-1”\r\nYou are all set to roll. Create Custom Dashboards and Reports\r\nincluding widgets you find most useful for your business.\r\nI found the following interesting. Depending on the purpose of your\r\nwebsite, you can include data about conversion, events,\r\ncampaigns,etc.\r\nAudience - Active Users\r\nHourly/Daily/Weekly No. of users\r\nSessions by Country\r\nUsers by Time of day\r\nWhat pages do your users visit?\r\nSee a sample Report below, blank as of now. Come back to see updates\r\nhere as I explore the many features available on Google Analytics.\r\nThanks! :)\r\n\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-09-04T00:16:47+08:00",
+    "last_modified": "2022-09-04T00:20:00+08:00",
     "input_file": {}
   },
   {
